@@ -237,7 +237,8 @@ class DesktopDisplayModeController(
 
     // Do not directly use this method to check the state of desktop-first mode. Use
     // [isDisplayDesktopFirst] instead.
-    private fun canDesktopFirstModeBeEnabledOnDefaultDisplay(): Boolean {
+        private fun canDesktopFirstModeBeEnabledOnDefaultDisplay(): Boolean {
+        return false
         if (FORCE_DESKTOP_FIRST_ON_DEFAULT_DISPLAY) {
             logW(
                 "FORCE_DESKTOP_FIRST_ON_DEFAULT_DISPLAY is enabled. Forcing desktop-first for " +

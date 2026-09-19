@@ -33,8 +33,7 @@ public final class DesktopModeHelper {
     /**
      * Flag to indicate whether to restrict desktop mode to supported devices.
      */
-    private static final boolean ENFORCE_DEVICE_RESTRICTIONS = SystemProperties.getBoolean(
-            "persist.wm.debug.desktop_mode_enforce_device_restrictions", true);
+    private static final boolean ENFORCE_DEVICE_RESTRICTIONS = false;
 
     /** Whether desktop mode is enabled. */
     private static boolean isDesktopModeEnabled() {
